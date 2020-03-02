@@ -69,13 +69,7 @@ function startGame() {
 document.addEventListener('click', checkForWin)
 document.addEventListener('contextmenu', checkForWin)
 
-
-// Define this function to look for a win condition:
-//
-// 1. Are all of the cells that are NOT mines visible?
-// 2. Are all of the mines marked?
 function checkForWin() {
-  console.log('checkForWin')
   var winCount = 0
   for (var i = 0; i < board.cells.length; i++) {
     var cell = board.cells[i]
